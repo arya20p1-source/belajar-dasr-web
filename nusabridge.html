@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <title>NUSABRIDGE - Platform Ekosistem Ekspor UMKM Indonesia & Escrow Gateway</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="NUSABRIDGE, Ekosistem Ekspor UMKM, Escrow Payment Security, Auto-Generate Incoterms 2020, RFQ Studio, KYC Hub NIB NPWP, Tracking PEB BL" name="keywords">
+    <meta content="NUSABRIDGE adalah platform satu pintu akselerasi ekspor komoditas UMKM Indonesia dengan verifikasi legalitas instan, smart RFQ Incoterms 2020, proteksi dana Escrow, dan integrasi kepabeanan." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template & Custom Dribbble/Pinterest Stylesheets -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/nusa.css" rel="stylesheet">
+
+    <!-- Chart.js CDN for Bar Chart & Data Visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#nusaNavbarIsland" data-bs-offset="110">
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-success" style="width: 3rem; height: 3rem;" role="status">
+            <span class="visually-hidden">Memuat NUSABRIDGE Platform...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Top Announcement Bar (Dribbble Micro-Banner) -->
+    <div class="container-fluid bg-dark text-white py-2 px-lg-5 d-none d-lg-block">
+        <div class="row align-items-center small">
+            <div class="col-md-7 text-start">
+                <span class="text-white-50"><i class="fas fa-shield-alt text-warning me-2"></i>Terintegrasi Sistem Nasional: <strong>OSS BKPM</strong> • <strong>CEISA 4.0 Bea Cukai</strong> • <strong>Rekening Escrow Bank Devisa</strong></span>
+            </div>
+            <div class="col-md-5 text-end text-white-50">
+                <span class="me-3"><i class="fas fa-check-circle text-success me-1"></i>Incoterms 2020 ICC Paris</span>
+                <span class="text-white"><i class="fas fa-globe-asia text-info me-1"></i>Ekspor UMKM ke 48+ Negara</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================================================================
+         1. FLOATING GLASS ISLAND NAVBAR (Dribbble Inspired Floating Pill)
+         Menjamin navbar tetap melayang elegan di atas, anti tenggelam saat scroll!
+         ====================================================================== -->
+    <div class="nusa-navbar-wrapper">
+        <nav id="nusaNavbarIsland" class="navbar navbar-expand-lg nusa-navbar-island">
+            <a href="#home" class="nusabridge-brand-dribbble">
+                <div class="nusabridge-brand-logo">
+                    <i class="fas fa-compass"></i>
+                </div>
+                <div>
+                    <h1 class="nusabridge-brand-name">NUSABRIDGE</h1>
+                    <span class="nusabridge-brand-caption d-none d-sm-block">INDONESIAN EXPORT ECOSYSTEM & ESCROW</span>
+                    <span class="nusabridge-brand-caption d-block d-sm-none">EXPORT & ESCROW HUB</span>
+                </div>
+            </a>
+            <button type="button" class="navbar-toggler navbar-toggler-custom collapsed" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto align-items-lg-center py-2 py-lg-0">
+                    <a href="#home" class="nav-item nav-link active">
+                        <span class="d-flex align-items-center"><i class="fas fa-home me-2 d-lg-none text-primary"></i>Home</span>
+                        <i class="fas fa-chevron-right d-lg-none text-muted small"></i>
+                    </a>
+                    <a href="#fitur" class="nav-item nav-link">
+                        <span class="d-flex align-items-center"><i class="fas fa-layer-group me-2 d-lg-none text-primary"></i>Fitur Solusi</span>
+                        <i class="fas fa-chevron-right d-lg-none text-muted small"></i>
+                    </a>
+                    <a href="#alur" class="nav-item nav-link">
+                        <span class="d-flex align-items-center"><i class="fas fa-project-diagram me-2 d-lg-none text-primary"></i>Alur Ekspor</span>
+                        <i class="fas fa-chevron-right d-lg-none text-muted small"></i>
+                    </a>
+                    <a href="#role" class="nav-item nav-link">
+                        <span class="d-flex align-items-center"><i class="fas fa-users me-2 d-lg-none text-primary"></i>Stakeholder Role</span>
+                        <i class="fas fa-chevron-right d-lg-none text-muted small"></i>
+                    </a>
+                    <a href="#statistik" class="nav-item nav-link">
+                        <span class="d-flex align-items-center"><i class="fas fa-chart-bar me-2 d-lg-none text-primary"></i>Diagram & Statistik</span>
+                        <i class="fas fa-chevron-right d-lg-none text-muted small"></i>
+                    </a>
+                    <a href="#demo" class="nav-item nav-link">
+                        <span class="d-flex align-items-center"><i class="fas fa-laptop-code me-2 d-lg-none text-primary"></i>Demo Studio</span>
+                        <i class="fas fa-chevron-right d-lg-none text-muted small"></i>
+                    </a>
+                </div>
+                <div class="ms-lg-3 py-2 py-lg-0">
+                    <a href="#demo" class="btn btn-dribbble-cta">
+                        <span>Coba Demo Interaktif</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- ======================================================================
+         2. HERO SECTION - DRIBBLE & PINTEREST LUXURY COMPOSITION
+         Clean Circle Layout Visual UMKM Butter, Orbiting Tracks & Micro-Widgets
+         ====================================================================== -->
+    <section id="home" class="nusa-hero-dribbble nusa-section">
+        <div class="container py-4 position-relative">
+            <div class="row align-items-center g-5">
+                <!-- Left Column: High-Impact Typography & Social Proof -->
+                <div class="col-lg-6">
+                    <div class="dribbble-pill-badge">
+                        <span class="pulse-glow"></span>
+                        <span>EKOSISTEM EKSPOR UMKM TERPERCAYA #1 • ESCROW SECURED</span>
+                    </div>
+
+                    <h1 class="dribbble-hero-title">
+                        Akselerasi Ekspor <span class="dribbble-gradient-text">Komoditas UMKM</span> ke Pasar Global.
+                    </h1>
+
+                    <p class="dribbble-hero-desc">
+                        Platform satu pintu untuk komoditas unggulan lokal Indonesia (seperti artisan cocoa & shea butter, rempah, vanili, dan produk nabati). Dilengkapi verifikasi instan NIB/NPWP, studio smart RFQ Incoterms 2020, jaminan keamanan dana Escrow, serta tracking logistik kepabeanan terintegrasi.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3 align-items-center mb-2">
+                        <a href="#demo" class="btn btn-dribbble-cta px-4 py-3 shadow">
+                            <i class="fas fa-play-circle me-1"></i>Jelajahi Demo Interaktif
+                        </a>
+                        <a href="#statistik" class="btn btn-outline-dark rounded-pill px-4 py-3 fw-bold">
+                            <i class="fas fa-chart-pie me-2"></i>Lihat Diagram Statistik
+                        </a>
+                    </div>
+
+                    <!-- Dribbble Social Proof Micro-Strip -->
+                    <div class="social-proof-strip">
+                        <div class="avatar-stack">
+                            <div class="avatar-initial" style="background: #0F766E;">NJ</div>
+                            <div class="avatar-initial" style="background: #D97706;">BS</div>
+                            <div class="avatar-initial" style="background: #0B132B;">KO</div>
+                            <div class="avatar-initial" style="background: #14B8A6;">TC</div>
+                        </div>
+                        <div class="social-proof-text">
+                            <strong>Dipercaya 1.840+ UMKM Ekspor Terdaftar</strong>
+                            <span><i class="fas fa-star text-warning"></i> 4.9/5 dari 48 Negara Buyer Internasional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Clean Circle Layout Hero Masterpiece -->
+                <div class="col-lg-6 text-center">
+                    <div class="hero-circle-stage">
+                        <!-- Orbiting Concentric Track Rings with Planetary Beads -->
+                        <div class="orbit-track-outer">
+                            <div class="orbit-node node-gold"></div>
+                        </div>
+                        <div class="orbit-track-inner">
+                            <div class="orbit-node node-emerald"></div>
+                        </div>
+                        <div class="circle-ambient-glow"></div>
+
+                        <!-- Central Clean Circle UMKM Visual (Artisan Cocoa & Shea Butter) -->
+                        <div class="hero-clean-circle-artwork">
+                            <img src="img/nusa-umkm-butter.jpg" alt="Indonesian Artisan Cocoa Butter and Shea Butter UMKM Commodity" class="img-fluid">
+                        </div>
+
+                        <!-- Dribbble Micro-Card 1: Quality Certificate -->
+                        <div class="dribbble-micro-card card-pos-quality text-start">
+                            <div class="d-flex align-items-center gap-2 mb-1">
+                                <span class="badge bg-success-subtle text-success p-1 rounded"><i class="fas fa-seedling"></i></span>
+                                <strong class="small text-dark mb-0">Artisan Cocoa & Shea Butter</strong>
+                            </div>
+                            <small class="text-muted d-block">100% Organik • Kualitas Ekspor Grade AAA</small>
+                            <div class="progress mt-2" style="height: 5px; width: 150px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 95%;"></div>
+                            </div>
+                            <small class="text-success fw-bold mt-1 d-block" style="font-size: 10px;">Lolos Uji Lab Sucofindo (95% Optimal)</small>
+                        </div>
+
+                        <!-- Dribbble Micro-Card 2: Escrow Vault Status -->
+                        <div class="dribbble-micro-card card-pos-escrow text-start">
+                            <div class="d-flex align-items-center gap-2 mb-1">
+                                <span class="badge bg-primary-subtle text-primary p-1 rounded"><i class="fas fa-shield-alt"></i></span>
+                                <strong class="small text-dark mb-0">Escrow Vault Protected</strong>
+                            </div>
+                            <div class="fs-6 fw-bold text-success">$62,500.00 USD</div>
+                            <small class="text-muted d-block">Dana Terkunci s/d On-Board B/L Terbit</small>
+                        </div>
+
+                        <!-- Dribbble Micro-Card 3: Auto Incoterms Contract -->
+                        <div class="dribbble-micro-card card-pos-contract text-start">
+                            <div class="d-flex align-items-center gap-2 mb-1">
+                                <span class="badge bg-warning-subtle text-warning p-1 rounded"><i class="fas fa-file-contract"></i></span>
+                                <strong class="small text-dark mb-0">Smart Incoterms 2020</strong>
+                            </div>
+                            <small class="text-muted d-block">FOB Tanjung Priok • Kontrak ICC Terbit</small>
+                            <span class="badge bg-info-subtle text-info border border-info mt-1" style="font-size: 10px;">Otomasi < 3 Menit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- ======================================================================
+         3. STATISTIK & DATA VISUALIZATION SECTION
+         Fintech Style Diagram Batang Agregat Ekspor Daerah & Simulasi Escrow
+         ====================================================================== -->
+    <section id="statistik" class="nusa-stats-section nusa-section">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 750px;">
+                <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill fw-bold mb-2">
+                    <i class="fas fa-chart-bar me-1"></i>DATA AGREGAT & ANALITIK KEUANGAN
+                </span>
+                <h2 class="display-6 fw-bold text-dark">Visualisasi Ekspor Daerah & Simulasi Escrow</h2>
+                <p class="text-muted">
+                    Transparansi data agregat komoditas UMKM antar-wilayah Indonesia serta arsitektur pengamanan aliran dana ekspor berbasis milestone.
+                </p>
+            </div>
+
+            <!-- 4 Elevated KPI Highlight Cards -->
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="nb-kpi-card kpi-gold">
+                        <div class="kpi-head-row">
+                            <div class="kpi-icon-squircle bg-warning-subtle text-warning">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <span class="kpi-pill-badge bg-warning-subtle text-warning border border-warning-subtle">
+                                <i class="fas fa-arrow-trend-up"></i> +42% YoY
+                            </span>
+                        </div>
+                        <div>
+                            <div class="kpi-number-display text-dark">$48.6M</div>
+                            <div class="kpi-title-label">Nilai Ekspor Terfasilitasi</div>
+                            <div class="kpi-meta-sub">
+                                <i class="fas fa-globe-asia text-warning"></i> 48 Negara Buyer Global
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="nb-kpi-card kpi-teal">
+                        <div class="kpi-head-row">
+                            <div class="kpi-icon-squircle bg-primary-subtle text-primary">
+                                <i class="fas fa-box-open"></i>
+                            </div>
+                            <span class="kpi-pill-badge bg-primary-subtle text-primary border border-primary-subtle">
+                                <i class="fas fa-cubes"></i> 7 Komoditas
+                            </span>
+                        </div>
+                        <div>
+                            <div class="kpi-number-display text-dark">5,620 Ton</div>
+                            <div class="kpi-title-label">Volume Komoditas Terkirim</div>
+                            <div class="kpi-meta-sub">
+                                <i class="fas fa-seedling text-primary"></i> Cocoa Butter, Rempah & Kopi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="nb-kpi-card kpi-emerald">
+                        <div class="kpi-head-row">
+                            <div class="kpi-icon-squircle bg-success-subtle text-success">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <span class="kpi-pill-badge bg-success-subtle text-success border border-success-subtle">
+                                <i class="fas fa-lock"></i> Escrow Custodian
+                            </span>
+                        </div>
+                        <div>
+                            <div class="kpi-number-display text-dark">100%</div>
+                            <div class="kpi-title-label">Kepastian Bayar UMKM</div>
+                            <div class="kpi-meta-sub">
+                                <i class="fas fa-check-circle text-success"></i> 0% Risiko Wanprestasi
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="nb-kpi-card kpi-cyan">
+                        <div class="kpi-head-row">
+                            <div class="kpi-icon-squircle bg-info-subtle text-info">
+                                <i class="fas fa-ship"></i>
+                            </div>
+                            <span class="kpi-pill-badge bg-info-subtle text-info border border-info-subtle">
+                                <i class="fas fa-bolt"></i> Fast-Track
+                            </span>
+                        </div>
+                        <div>
+                            <div class="kpi-number-display text-dark">99.2%</div>
+                            <div class="kpi-title-label">Jalur Hijau Bea Cukai (SPE)</div>
+                            <div class="kpi-meta-sub">
+                                <i class="fas fa-passport text-info"></i> Otomasi CEISA 4.0 Pabean
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <!-- CHART 1: DIAGRAM BATANG AGREGAT EKSPOR DAERAH -->
+                <div class="col-lg-7">
+                    <div class="fintech-chart-container h-100">
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 pb-2 border-bottom">
+                            <div>
+                                <h5 class="fw-bold mb-1 text-dark"><i class="fas fa-chart-column text-primary me-2"></i>Statistik Agregat Ekspor Antar-Daerah</h5>
+                                <small class="text-muted">Perbandingan Nilai (Juta USD) & Volume (Ton) Berdasarkan Provinsi</small>
+                            </div>
+                            <div class="d-flex flex-wrap gap-1 mt-2 mt-md-0">
+                                <button class="chart-filter-pill active" data-category="all">Semua</button>
+                                <button class="chart-filter-pill" data-category="butter">Butter & Lemak</button>
+                                <button class="chart-filter-pill" data-category="spices">Rempah & Vanili</button>
+                                <button class="chart-filter-pill" data-category="coffee">Kopi & Kakao</button>
+                            </div>
+                        </div>
+
+                        <!-- Canvas Diagram Batang Chart.js -->
+                        <div style="height: 330px; position: relative;">
+                            <canvas id="exportBarChart"></canvas>
+                        </div>
+                        <div class="mt-3 p-2 bg-light rounded-3 text-secondary small d-flex justify-content-between">
+                            <span><i class="fas fa-info-circle text-primary me-1"></i>Data bersumber dari manifest pabean & agregasi NUSABRIDGE 2025/2026.</span>
+                            <span class="fw-semibold text-primary">Status: Realtime Sync</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHART 2: VISUALISASI DATA & SIMULASI ESCROW -->
+                <div class="col-lg-5">
+                    <div class="fintech-chart-container h-100">
+                        <div class="mb-3 pb-2 border-bottom">
+                            <h5 class="fw-bold mb-1 text-dark"><i class="fas fa-shield-virus text-success me-2"></i>Simulasi Distribusi Escrow Security</h5>
+                            <small class="text-muted">Alur Proteksi Dana Transaksi Ekspor Berbasis Milestone</small>
+                        </div>
+
+                        <div class="row align-items-center g-3">
+                            <div class="col-sm-6 text-center">
+                                <div style="height: 180px; position: relative;">
+                                    <canvas id="escrowMilestoneChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="list-unstyled small mb-0">
+                                    <li class="mb-2"><span class="badge bg-teal-subtle text-success me-1">●</span> <strong>30% DP:</strong> Modal Produksi UMKM</li>
+                                    <li class="mb-2"><span class="badge bg-info-subtle text-info me-1">●</span> <strong>30% QC:</strong> Lolos Uji Lab Surveyor</li>
+                                    <li class="mb-2"><span class="badge bg-warning-subtle text-warning me-1">●</span> <strong>20% PEB:</strong> Gate-In Pelabuhan</li>
+                                    <li><span class="badge bg-primary-subtle text-primary me-1">●</span> <strong>20% B/L:</strong> Terbit On-Board B/L</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Escrow Calculator Slider -->
+                        <div class="escrow-slider-card mt-3">
+                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                <span class="small fw-bold text-dark">Geser Nilai Kontrak Ekspor:</span>
+                                <span id="escrowDisplayAmount" class="badge bg-primary fs-6 px-3 py-1">$50,000 USD</span>
+                            </div>
+                            <input type="range" class="form-range custom-range-slider mb-3" id="escrowAmountRange" min="10000" max="250000" step="5000" value="50000">
+
+                            <div class="row g-2 text-start">
+                                <div class="col-6">
+                                    <div class="escrow-pill-stat">
+                                        <small class="text-muted d-block">Uang Muka Produksi (30%)</small>
+                                        <span id="escrowStatDP" class="fw-bold text-success">$15,000</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="escrow-pill-stat">
+                                        <small class="text-muted d-block">Lolos Uji Mutu QC (30%)</small>
+                                        <span id="escrowStatQC" class="fw-bold text-primary">$15,000</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="escrow-pill-stat">
+                                        <small class="text-muted d-block">Customs SPE / PEB (20%)</small>
+                                        <span id="escrowStatCustoms" class="fw-bold text-warning">$10,000</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="escrow-pill-stat">
+                                        <small class="text-muted d-block">Pelunasan B/L (20%)</small>
+                                        <span id="escrowStatBL" class="fw-bold text-info">$10,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 text-center">
+                                <small class="text-muted">Biaya Jasa Escrow Proteksi Platform: <strong id="escrowStatFee" class="text-dark">$250 (0.5%)</strong></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Statistik End -->
+
+    <!-- ======================================================================
+         4. FITUR PROPOSAL LENGKAP - BENTO GRID ARCHITECTURE
+         4 Pilar Inti: Smart RFQ Studio, Escrow Security, KYC Hub, Tracking Kepabeanan
+         ====================================================================== -->
+    <section id="fitur" class="py-5 bg-white nusa-section">
+        <div class="container py-4">
+            <div class="text-center mx-auto mb-5" style="max-width: 750px;">
+                <span class="badge bg-success-subtle text-success border border-success-subtle px-3 py-2 rounded-pill fw-bold mb-2">
+                    <i class="fas fa-layer-group me-1"></i>PROPOSAL BENTO GRID
+                </span>
+                <h2 class="display-6 fw-bold text-dark">Solusi End-to-End Ekosistem Ekspor NUSABRIDGE</h2>
+                <p class="text-muted">
+                    Empat modul terintegrasi untuk menyelesaikan kendala ekspor UMKM: legalitas, standardisasi kontrak internasional, kepastian dana, dan kepabeanan.
+                </p>
+            </div>
+
+            <!-- Dribbble Bento Grid Container -->
+            <div class="bento-grid-wrapper">
+
+                <!-- Bento 1: Large 7-col Card - Smart RFQ Studio -->
+                <div class="bento-card bento-col-7 bento-accent-gold">
+                    <div class="bento-card-header">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bento-badge-icon bg-warning-subtle text-warning">
+                                <i class="fas fa-file-invoice"></i>
+                            </div>
+                            <div class="card-eyebrow-wrapper text-warning mb-0">
+                                <span class="badge-dot dot-gold"></span>
+                                <span>PILAR 01 • OTOMASI KONTRAK</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-warning text-dark fw-bold">Incoterms 2020 Compliant</span>
+                    </div>
+
+                    <h3 class="card-title-highlight">Smart RFQ Studio & Auto-Generate Contract</h3>
+                    <p class="card-lead-text">
+                        Studio negosiasi cerdas untuk menerbitkan <strong>Request for Quotation (RFQ), Proforma Invoice, dan Sales Contract</strong> berstandar resmi <strong>ICC Paris Incoterms 2020</strong> secara instan dengan proteksi klausul hukum internasional.
+                    </p>
+
+                    <div class="card-feature-box">
+                        <div class="feature-item-row">
+                            <span class="feature-item-label">
+                                <i class="fas fa-balance-scale text-warning me-2"></i>Dukungan Aturan ICC:
+                            </span>
+                            <div class="d-flex gap-1">
+                                <span class="badge bg-white text-dark border">FOB</span>
+                                <span class="badge bg-white text-dark border">CIF</span>
+                                <span class="badge bg-white text-dark border">CFR</span>
+                                <span class="badge bg-white text-dark border">EXW</span>
+                            </div>
+                        </div>
+                        <div class="feature-item-row">
+                            <span class="feature-item-label">
+                                <i class="fas fa-shield-halved text-success me-2"></i>Klausul Perlindungan:
+                            </span>
+                            <span class="text-dark fw-semibold">Arbitrase SIAC / BANI & Klausul Force Majeure Sah</span>
+                        </div>
+                        <div class="feature-item-row">
+                            <span class="feature-item-label">
+                                <i class="fas fa-chart-line text-primary me-2"></i>Kalkulator Margin UMKM:
+                            </span>
+                            <span class="text-success fw-bold">Simulasi Biaya Bahan Baku s/d THC Pelabuhan</span>
+                        </div>
+                    </div>
+
+                    <div class="card-output-banner banner-gold">
+                        <i class="fas fa-stamp fs-5 text-warning"></i>
+                        <div>
+                            <strong>Output Dokumen Legal:</strong> PDF Resmi Berstempel Digital & QR Barcode Siap Cetak
+                        </div>
+                    </div>
+
+                    <a href="#demo" class="btn btn-sm btn-outline-warning text-dark rounded-pill fw-bold">
+                        Buka Studio Simulasi RFQ <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+
+                <!-- Bento 2: 5-col Card - Escrow Payment Security -->
+                <div class="bento-card bento-col-5 bento-accent-emerald">
+                    <div class="bento-card-header">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bento-badge-icon bg-success-subtle text-success">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="card-eyebrow-wrapper text-success mb-0">
+                                <span class="badge-dot dot-emerald"></span>
+                                <span>PILAR 02 • FINANSIAL ESCROW</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-success text-white fw-bold">Bank Custodian Vault</span>
+                    </div>
+
+                    <h3 class="card-title-highlight">Simulasi Escrow Payment Security</h3>
+                    <p class="card-lead-text">
+                        Meniadakan risiko <strong>gagal bayar buyer</strong> bagi UMKM dan kerugian pembeli internasional. Dana dikunci di <strong>rekening bersama devisa resmi</strong> dan dicairkan bertahap berbasis pemenuhan dokumen logistik.
+                    </p>
+
+                    <div class="card-feature-box">
+                        <div class="feature-item-row">
+                            <span class="feature-item-label">
+                                <i class="fas fa-vault text-success me-2"></i>Rekening Kustodian:
+                            </span>
+                            <span class="text-dark fw-semibold">Valas USD / EUR Terlisensi BI & OJK</span>
+                        </div>
+                        <div class="feature-item-row">
+                            <span class="feature-item-label">
+                                <i class="fas fa-layer-group text-primary me-2"></i>4 Tahap Pencairan:
+                            </span>
+                            <span class="badge bg-success-subtle text-success border border-success">30% DP • 30% QC • 20% PEB • 20% B/L</span>
+                        </div>
+                        <div class="feature-item-row">
+                            <span class="feature-item-label">
+                                <i class="fas fa-hand-holding-dollar text-warning me-2"></i>Biaya Jasa:
+                            </span>
+                            <span class="text-dark fw-bold">Transparan Hanya 0.5% (Terendah)</span>
+                        </div>
+                    </div>
+
+                    <div class="card-output-banner">
+                        <i class="fas fa-lock fs-5 text-success"></i>
+                        <div>
+                            <strong>Garansi Finansial:</strong> 100% Kepastian Dana Terkunci Sebelum Kontainer Dikirim
+                        </div>
+                    </div>
+
+                    <a href="#demo" class="btn btn-sm btn-outline-success rounded-pill fw-bold mt-auto">
+                        Coba Simulasi Escrow <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+
+                <!-- Bento 3: 6-col Card - KYC Hub & Legalitas -->
+                <div class="bento-card bento-col-6 bento-accent-teal">
+                    <div class="bento-card-header">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bento-badge-icon bg-primary-subtle text-primary">
+                                <i class="fas fa-id-card-alt"></i>
+                            </div>
+                            <div class="card-eyebrow-wrapper text-primary mb-0">
+                                <span class="badge-dot dot-teal"></span>
+                                <span>PILAR 03 • AUDIT LEGALITAS</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-primary text-white fw-bold">Integrasi OSS BKPM</span>
+                    </div>
+
+                    <h3 class="card-title-highlight">KYC Hub & Verifikasi Legalitas Instan</h3>
+                    <p class="card-lead-text">
+                        Audit instan kesiapan ekspor entitas UMKM melalui integrasi API ke database <strong>OSS BKPM, Ditjen Pajak</strong>, serta verifikasi kepatuhan sertifikasi mutu standar global.
+                    </p>
+
+                    <div class="card-feature-box">
+                        <div class="feature-item-row">
+                            <span class="feature-item-label">
+                                <i class="fas fa-building text-primary me-2"></i>Validasi NIB 13-Digit:
+                            </span>
+                            <span class="text-dark fw-semibold">Pemeriksaan Legalitas OSS Realtime</span>
+                        </div>
+                        <div class="feature-item-row">
+                            <span class="feature-item-label">
+                                <i class="fas fa-file-invoice-dollar text-warning me-2"></i>Kepatuhan Pajak:
+                            </span>
+                            <span class="text-dark fw-semibold">NPWP Valid & KBLI Industri Ekspor</span>
+                        </div>
+                        <div class="feature-item-row">
+                            <span class="feature-item-label">
+                                <i class="fas fa-certificate text-success me-2"></i>Sertifikasi Global:
+                            </span>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-success border border-success">HACCP</span>
+                                <span class="badge bg-light text-success border border-success">Halal</span>
+                                <span class="badge bg-light text-success border border-success">BPOM MD</span>
+                                <span class="badge bg-light text-success border border-success">Phyto</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-output-banner banner-cyan">
+                        <i class="fas fa-qrcode fs-5 text-primary"></i>
+                        <div>
+                            <strong>Output Passport:</strong> Verified Digital Exporter Passport Grade AAA (Siap Ekspor)
+                        </div>
+                    </div>
+
+                    <a href="#demo" class="btn btn-sm btn-outline-primary rounded-pill fw-bold">
+                        Coba Verifikasi NIB/NPWP <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+
+                <!-- Bento 4: 6-col Card - Tracking Kepabeanan & B/L -->
+                <div class="bento-card bento-col-6 bento-accent-cyan">
+                    <div class="bento-card-header">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="bento-badge-icon bg-info-subtle text-info">
+                                <i class="fas fa-ship"></i>
+                            </div>
+                            <div class="card-eyebrow-wrapper text-info mb-0">
+                                <span class="badge-dot dot-cyan"></span>
+                                <span>PILAR 04 • LOGISTIK & PABEAN</span>
+                            </div>
+                        </div>
+                        <span class="badge bg-info text-dark fw-bold">CEISA 4.0 Bea Cukai</span>
+                    </div>
+
+                    <h3 class="card-title-highlight">Dashboard Logistik & Kepabeanan Terpadu</h3>
+                    <p class="card-lead-text">
+                        Monitoring terintegrasi rantai pasok ekspor: pendaftaran PEB di sistem <strong>CEISA 4.0 Bea Cukai</strong>, status <strong>Jalur Hijau (SPE)</strong>, stuffing depo, hingga <strong>Bill of Lading (B/L)</strong> pelayaran samudera.
+                    </p>
+
+                    <div class="card-feature-box">
+                        <div class="feature-item-row">
+                            <span class="feature-item-label">
+                                <i class="fas fa-anchor text-info me-2"></i>Live Tracking B/L:
+                            </span>
+                            <span class="text-dark fw-semibold">Integrasi Manifes Pelayaran Internasional</span>
+                        </div>
+                        <div class="feature-item-row">
+                            <span class="feature-item-label">
+                                <i class="fas fa-file-check text-success me-2"></i>Jalur Hijau Bea Cukai:
+                            </span>
+                            <span class="badge bg-success-subtle text-success border border-success">Surat Persetujuan Ekspor (SPE) Instan</span>
+                        </div>
+                        <div class="feature-item-row">
+                            <span class="feature-item-label">
+                                <i class="fas fa-bell text-warning me-2"></i>Pemicu Event Escrow:
+                            </span>
+                            <span class="text-dark fw-semibold">Pencairan Dana Otomatis saat B/L Terbit</span>
+                        </div>
+                    </div>
+
+                    <div class="card-output-banner banner-cyan">
+                        <i class="fas fa-compass fs-5 text-info"></i>
+                        <div>
+                            <strong>Tracking Output:</strong> Status Posisi Kontainer Samudera & Integrasi Manifes Pabean
+                        </div>
+                    </div>
+
+                    <a href="#demo" class="btn btn-sm btn-outline-info text-dark rounded-pill fw-bold">
+                        Coba Lacak B/L & PEB <i class="fas fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Fitur End -->
+
+    <!-- ======================================================================
+         5. SECTION ALUR (Export Workflow Engine)
+         ====================================================================== -->
+    <section id="alur" class="py-5 bg-light nusa-section">
+        <div class="container py-4">
+            <div class="text-center mx-auto mb-5" style="max-width: 750px;">
+                <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill fw-bold mb-2">
+                    <i class="fas fa-project-diagram me-1"></i>WORKFLOW ENGINE
+                </span>
+                <h2 class="display-6 fw-bold text-dark">Alur Ekspor Terintegrasi NUSABRIDGE</h2>
+                <p class="text-muted">
+                    Proses 5 langkah terstandardisasi yang mempermudah UMKM dari legalitas lokal hingga kontainer tiba di pelabuhan mancanegara.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Tahap 1 -->
+                <div class="col-lg col-md-6">
+                    <div class="nb-workflow-card" style="border-top-color: #0F766E;">
+                        <span class="workflow-watermark-num">01</span>
+                        <div>
+                            <div class="workflow-icon-box bg-primary-subtle text-primary">
+                                <i class="fas fa-fingerprint"></i>
+                            </div>
+                            <div class="workflow-stage-pill bg-primary-subtle text-primary border border-primary-subtle">
+                                Tahap 01 • Legalitas
+                            </div>
+                            <h5 class="workflow-card-title">Verifikasi KYC Hub</h5>
+                            <p class="workflow-card-desc">
+                                UMKM menginput <strong>NIB 13-digit & NPWP</strong>. Sistem mengaudit database <strong>OSS BKPM</strong>, izin BPOM, dan sertifikasi Halal secara instan.
+                            </p>
+                        </div>
+                        <div class="workflow-output-pill">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>Output: <strong>Verified Grade AAA</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tahap 2 -->
+                <div class="col-lg col-md-6">
+                    <div class="nb-workflow-card" style="border-top-color: #D97706;">
+                        <span class="workflow-watermark-num">02</span>
+                        <div>
+                            <div class="workflow-icon-box bg-warning-subtle text-warning">
+                                <i class="fas fa-file-signature"></i>
+                            </div>
+                            <div class="workflow-stage-pill bg-warning-subtle text-warning border border-warning-subtle">
+                                Tahap 02 • Negosiasi
+                            </div>
+                            <h5 class="workflow-card-title">Smart RFQ & Kontrak</h5>
+                            <p class="workflow-card-desc">
+                                Penerbitan otomatis <strong>RFQ, Proforma Invoice, & Sales Contract</strong> berstandar <strong>Incoterms 2020</strong> berstempel digital sah ICC.
+                            </p>
+                        </div>
+                        <div class="workflow-output-pill">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>Output: <strong>Kontrak Sah ICC 2020</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tahap 3 -->
+                <div class="col-lg col-md-6">
+                    <div class="nb-workflow-card" style="border-top-color: #10B981;">
+                        <span class="workflow-watermark-num">03</span>
+                        <div>
+                            <div class="workflow-icon-box bg-success-subtle text-success">
+                                <i class="fas fa-vault"></i>
+                            </div>
+                            <div class="workflow-stage-pill bg-success-subtle text-success border border-success-subtle">
+                                Tahap 03 • Finansial
+                            </div>
+                            <h5 class="workflow-card-title">Deposit Escrow Vault</h5>
+                            <p class="workflow-card-desc">
+                                Buyer menyetor <strong>100% nilai kontrak</strong> ke Rekening Bersama resmi. <strong>DP 30%</strong> langsung dicairkan sebagai modal produksi UMKM.
+                            </p>
+                        </div>
+                        <div class="workflow-output-pill">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>Output: <strong>DP 30% Cair Rekening</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tahap 4 -->
+                <div class="col-lg col-md-6">
+                    <div class="nb-workflow-card" style="border-top-color: #0284C7;">
+                        <span class="workflow-watermark-num">04</span>
+                        <div>
+                            <div class="workflow-icon-box bg-info-subtle text-info">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <div class="workflow-stage-pill bg-info-subtle text-info border border-info-subtle">
+                                Tahap 04 • Pabean
+                            </div>
+                            <h5 class="workflow-card-title">QC Lab & CEISA Pabean</h5>
+                            <p class="workflow-card-desc">
+                                Surveyor independen menguji mutu komoditas, sistem memicu pengajuan <strong>PEB CEISA 4.0 Bea Cukai</strong> dan terbit <strong>SPE Jalur Hijau</strong>.
+                            </p>
+                        </div>
+                        <div class="workflow-output-pill">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>Output: <strong>SPE Jalur Hijau Terbit</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tahap 5 -->
+                <div class="col-lg col-md-6">
+                    <div class="nb-workflow-card" style="border-top-color: #6366F1;">
+                        <span class="workflow-watermark-num">05</span>
+                        <div>
+                            <div class="workflow-icon-box bg-primary-subtle text-primary">
+                                <i class="fas fa-box-check"></i>
+                            </div>
+                            <div class="workflow-stage-pill bg-primary-subtle text-primary border border-primary-subtle">
+                                Tahap 05 • Settlement
+                            </div>
+                            <h5 class="workflow-card-title">Terbit B/L & Pelunasan</h5>
+                            <p class="workflow-card-desc">
+                                Kontainer dimuat ke kapal, terbit <strong>Original On-Board B/L</strong>. Saldo escrow tersisa <strong>100% otomatis lunas</strong> ke rekening UMKM.
+                            </p>
+                        </div>
+                        <div class="workflow-output-pill">
+                            <i class="fas fa-check-circle text-success"></i>
+                            <span>Output: <strong>Settlement Saldo Lunas</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Alur End -->
+
+    <!-- ======================================================================
+         6. SECTION ROLE (Multi-Stakeholder Collaboration)
+         ====================================================================== -->
+    <section id="role" class="py-5 bg-white nusa-section">
+        <div class="container py-4">
+            <div class="text-center mx-auto mb-5" style="max-width: 750px;">
+                <span class="badge bg-secondary-subtle text-dark border px-3 py-2 rounded-pill fw-bold mb-2">
+                    <i class="fas fa-users-cog me-1"></i>MULTI-STAKEHOLDER ECOSYSTEM
+                </span>
+                <h2 class="display-6 fw-bold text-dark">Peran Strategis Dalam Ekosistem NUSABRIDGE</h2>
+                <p class="text-muted">
+                    Setiap entitas terhubung dalam satu rantai nilai yang transparan, aman, dan saling menguntungkan.
+                </p>
+            </div>
+
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+                <button class="role-pill-btn active" data-role="umkm">
+                    <i class="fas fa-store me-2"></i>UMKM Eksportir
+                </button>
+                <button class="role-pill-btn" data-role="buyer">
+                    <i class="fas fa-globe-americas me-2"></i>Buyer Internasional
+                </button>
+                <button class="role-pill-btn" data-role="bank">
+                    <i class="fas fa-university me-2"></i>Bank & Escrow Custodian
+                </button>
+                <button class="role-pill-btn" data-role="forwarder">
+                    <i class="fas fa-dolly me-2"></i>Forwarder & Surveyor
+                </button>
+                <button class="role-pill-btn" data-role="customs">
+                    <i class="fas fa-landmark me-2"></i>Bea Cukai & Regulator
+                </button>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Role 1: UMKM Eksportir -->
+                    <div id="role-umkm" class="role-content-pane">
+                        <div class="nb-role-card">
+                            <div class="row align-items-center g-4">
+                                <div class="col-lg-8">
+                                    <span class="badge bg-primary text-white mb-2 px-3 py-2 rounded-pill fw-bold">
+                                        <i class="fas fa-store me-1"></i>Produsen Komoditas Unggulan
+                                    </span>
+                                    <h3 class="fw-bold text-dark mb-2">UMKM Eksportir Indonesia</h3>
+                                    <p class="text-secondary small mb-3">
+                                        Mendapatkan perlindungan modal kerja melalui <strong class="text-dark">kepastian pembayaran dari Escrow</strong>, template kontrak perdagangan internasional tanpa biaya advokat mahal, serta akses langsung ke importir mancanegara.
+                                    </p>
+
+                                    <!-- 3-Benefit Grid -->
+                                    <div class="role-benefit-grid">
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-shield-alt text-success benefit-icon"></i>
+                                            <div class="benefit-title">Proteksi Dana 100%</div>
+                                            <p class="benefit-desc">Dana buyer terkunci di Escrow sebelum stuffing kontainer dimulai.</p>
+                                        </div>
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-file-contract text-warning benefit-icon"></i>
+                                            <div class="benefit-title">Kontrak ICC Sah</div>
+                                            <p class="benefit-desc">Proforma Invoice & Sales Contract Incoterms 2020 otomatis.</p>
+                                        </div>
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-globe-asia text-primary benefit-icon"></i>
+                                            <div class="benefit-title">Reputasi Grade AAA</div>
+                                            <p class="benefit-desc">Profil eksportir terverifikasi diakses buyer 48 negara.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <div class="p-4 bg-light rounded-4 border shadow-sm">
+                                        <i class="fas fa-award text-warning display-4 mb-2"></i>
+                                        <h5 class="fw-bold text-dark mb-1">Kepastian Bayar 100%</h5>
+                                        <small class="text-muted d-block mb-3">0% Risiko Wanprestasi Internasional</small>
+                                        <span class="badge bg-success-subtle text-success border border-success px-3 py-1 rounded-pill">
+                                            <i class="fas fa-check-circle me-1"></i>Modal Kerja Terjamin
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Role 2: Buyer Internasional -->
+                    <div id="role-buyer" class="role-content-pane" style="display: none;">
+                        <div class="nb-role-card" style="border-top-color: #0284C7;">
+                            <div class="row align-items-center g-4">
+                                <div class="col-lg-8">
+                                    <span class="badge bg-info text-dark mb-2 px-3 py-2 rounded-pill fw-bold">
+                                        <i class="fas fa-globe-americas me-1"></i>Global Importers & Traders
+                                    </span>
+                                    <h3 class="fw-bold text-dark mb-2">Buyer / Importir Internasional</h3>
+                                    <p class="text-secondary small mb-3">
+                                        Mendapatkan supplier Indonesia yang <strong class="text-dark">terverifikasi legalitas NIB & mutunya</strong>. Dana pembeli aman dan dijamin kembali 100% bila komoditas tidak lulus uji inspeksi surveyor independen.
+                                    </p>
+
+                                    <!-- 3-Benefit Grid -->
+                                    <div class="role-benefit-grid">
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-building-circle-check text-primary benefit-icon"></i>
+                                            <div class="benefit-title">Supplier Terverifikasi</div>
+                                            <p class="benefit-desc">Audit legalitas NIB & NPWP via API OSS BKPM real-time.</p>
+                                        </div>
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-shield-check text-success benefit-icon"></i>
+                                            <div class="benefit-title">Zero Financial Risk</div>
+                                            <p class="benefit-desc">Jaminan refund 100% jika komoditas gagal inspeksi mutu.</p>
+                                        </div>
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-ship text-info benefit-icon"></i>
+                                            <div class="benefit-title">Transparansi Manifes</div>
+                                            <p class="benefit-desc">Pelacakan Bill of Lading (B/L) dan kontainer kapal transparan.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <div class="p-4 bg-light rounded-4 border shadow-sm">
+                                        <i class="fas fa-shield-alt text-success display-4 mb-2"></i>
+                                        <h5 class="fw-bold text-dark mb-1">Zero Financial Risk</h5>
+                                        <small class="text-muted d-block mb-3">Dana Terproteksi Bank Kustodian</small>
+                                        <span class="badge bg-info-subtle text-info border border-info px-3 py-1 rounded-pill">
+                                            <i class="fas fa-lock me-1"></i>Pencairan Berbasis Dokumen
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Role 3: Bank Custodian -->
+                    <div id="role-bank" class="role-content-pane" style="display: none;">
+                        <div class="nb-role-card" style="border-top-color: #10B981;">
+                            <div class="row align-items-center g-4">
+                                <div class="col-lg-8">
+                                    <span class="badge bg-success text-white mb-2 px-3 py-2 rounded-pill fw-bold">
+                                        <i class="fas fa-university me-1"></i>Lembaga Perbankan Devisa
+                                    </span>
+                                    <h3 class="fw-bold text-dark mb-2">Mitra Perbankan & Escrow Custodian</h3>
+                                    <p class="text-secondary small mb-3">
+                                        Menyediakan <strong class="text-dark">rekening penampungan valas resmi (USD, EUR, SGD)</strong> berizin Bank Indonesia dan OJK dengan mekanisme pelepasan bersyarat berbasis verifikasi dokumen logistik fisik dan digital.
+                                    </p>
+
+                                    <!-- 3-Benefit Grid -->
+                                    <div class="role-benefit-grid">
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-vault text-success benefit-icon"></i>
+                                            <div class="benefit-title">Valas Berizin Resmi</div>
+                                            <p class="benefit-desc">Rekening penampungan valas diawasi OJK dan Bank Indonesia.</p>
+                                        </div>
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-bolt text-warning benefit-icon"></i>
+                                            <div class="benefit-title">Pelepasan Bersyarat</div>
+                                            <p class="benefit-desc">Saldo otomatis cair saat milestone dokumen terpenuhi.</p>
+                                        </div>
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-coins text-primary benefit-icon"></i>
+                                            <div class="benefit-title">Kurs Transparan</div>
+                                            <p class="benefit-desc">Konversi valas ke rekening lokal tanpa markup tersembunyi.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <div class="p-4 bg-light rounded-4 border shadow-sm">
+                                        <i class="fas fa-vault text-primary display-4 mb-2"></i>
+                                        <h5 class="fw-bold text-dark mb-1">Regulated Escrow</h5>
+                                        <small class="text-muted d-block mb-3">Standar Perbankan Devisa Nasional</small>
+                                        <span class="badge bg-success-subtle text-success border border-success px-3 py-1 rounded-pill">
+                                            <i class="fas fa-check-double me-1"></i>Terlisensi OJK & BI
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Role 4: Forwarder & Surveyor -->
+                    <div id="role-forwarder" class="role-content-pane" style="display: none;">
+                        <div class="nb-role-card" style="border-top-color: #D97706;">
+                            <div class="row align-items-center g-4">
+                                <div class="col-lg-8">
+                                    <span class="badge bg-warning text-dark mb-2 px-3 py-2 rounded-pill fw-bold">
+                                        <i class="fas fa-dolly me-1"></i>Logistik & Pengujian Mutu
+                                    </span>
+                                    <h3 class="fw-bold text-dark mb-2">Freight Forwarder & Surveyor Independen</h3>
+                                    <p class="text-secondary small mb-3">
+                                        Surveyor independen menguji <strong class="text-dark">spesifikasi mutu komoditas (COA)</strong> sebelum pemuatan, sedangkan freight forwarder mengurus kontainer ekspor, stuffing, dan penerbitan Bill of Lading (B/L) asli.
+                                    </p>
+
+                                    <!-- 3-Benefit Grid -->
+                                    <div class="role-benefit-grid">
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-microscope text-primary benefit-icon"></i>
+                                            <div class="benefit-title">Uji Lab Terakreditasi</div>
+                                            <p class="benefit-desc">Laporan analisis COA Sucofindo/Carsurin berstandar ekspor.</p>
+                                        </div>
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-box text-warning benefit-icon"></i>
+                                            <div class="benefit-title">Kontainer Standar Ekspor</div>
+                                            <p class="benefit-desc">Penyediaan kontainer reefer/dry berstandar pelayaran dunia.</p>
+                                        </div>
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-file-invoice text-success benefit-icon"></i>
+                                            <div class="benefit-title">Verifikasi B/L Asli</div>
+                                            <p class="benefit-desc">Sinkronisasi status B/L sebagai pemicu settlement dana escrow.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <div class="p-4 bg-light rounded-4 border shadow-sm">
+                                        <i class="fas fa-clipboard-check text-info display-4 mb-2"></i>
+                                        <h5 class="fw-bold text-dark mb-1">Surveyor Report & B/L</h5>
+                                        <small class="text-muted d-block mb-3">Dokumen Kunci Pelepasan Escrow</small>
+                                        <span class="badge bg-warning-subtle text-warning border border-warning px-3 py-1 rounded-pill">
+                                            <i class="fas fa-stamp me-1"></i>Verifikasi Terakreditasi
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Role 5: Bea Cukai & Regulator -->
+                    <div id="role-customs" class="role-content-pane" style="display: none;">
+                        <div class="nb-role-card" style="border-top-color: #DC2626;">
+                            <div class="row align-items-center g-4">
+                                <div class="col-lg-8">
+                                    <span class="badge bg-danger text-white mb-2 px-3 py-2 rounded-pill fw-bold">
+                                        <i class="fas fa-landmark me-1"></i>Otoritas Kepabeanan & Perdagangan
+                                    </span>
+                                    <h3 class="fw-bold text-dark mb-2">Bea Cukai & Kementerian Terkait</h3>
+                                    <p class="text-secondary small mb-3">
+                                        Memastikan kepatuhan aturan larangan & pembatasan (Lartas), memeriksa dokumen PEB, dan menerbitkan <strong class="text-dark">Surat Persetujuan Ekspor (SPE) Jalur Hijau</strong> secara cepat untuk komoditas UMKM compliant.
+                                    </p>
+
+                                    <!-- 3-Benefit Grid -->
+                                    <div class="role-benefit-grid">
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-passport text-danger benefit-icon"></i>
+                                            <div class="benefit-title">SPE Jalur Hijau</div>
+                                            <p class="benefit-desc">Clearance PEB otomatis tanpa hambatan pemeriksaan fisik.</p>
+                                        </div>
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-file-shield text-primary benefit-icon"></i>
+                                            <div class="benefit-title">Kepatuhan DHE BI</div>
+                                            <p class="benefit-desc">Pengawasan devisa hasil ekspor masuk perbankan nasional.</p>
+                                        </div>
+                                        <div class="role-benefit-item">
+                                            <i class="fas fa-chart-column text-success benefit-icon"></i>
+                                            <div class="benefit-title">Agregasi Data Ekspor</div>
+                                            <p class="benefit-desc">Data komoditas unggulan daerah terarsip secara real-time.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 text-center">
+                                    <div class="p-4 bg-light rounded-4 border shadow-sm">
+                                        <i class="fas fa-passport text-danger display-4 mb-2"></i>
+                                        <h5 class="fw-bold text-dark mb-1">CEISA 4.0 Jalur Hijau</h5>
+                                        <small class="text-muted d-block mb-3">Otomasi Persetujuan Ekspor (SPE)</small>
+                                        <span class="badge bg-danger-subtle text-danger border border-danger px-3 py-1 rounded-pill">
+                                            <i class="fas fa-shield-halved me-1"></i>Kepatuhan Regulasi Nasional
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Role End -->
+
+    <!-- ======================================================================
+         7. SECTION DEMO INTERAKTIF
+         Demo 1: KYC Hub
+         Demo 2: Elevated Smart RFQ Studio & Incoterms 2020
+         Demo 3: Escrow Payment Security
+         Demo 4: Dashboard Logistik & Kepabeanan
+         ====================================================================== -->
+    <section id="demo" class="nusa-demo-section nusa-section">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 750px;">
+                <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill fw-bold mb-2">
+                    <i class="fas fa-laptop-code me-1"></i>LIVE INTERACTIVE DEMO STUDIO
+                </span>
+                <h2 class="display-6 fw-bold text-dark">Uji Coba Langsung Fitur Platform NUSABRIDGE</h2>
+                <p class="text-muted">
+                    Eksplorasi modul interaktif: verifikasi KYC, Studio RFQ & Kontrak Incoterms 2020 terintegrasi kalkulator margin, simulasi Escrow, dan pelacakan B/L pabean.
+                </p>
+            </div>
+
+            <!-- Demo Navigation Tabs -->
+            <ul class="nav demo-tabs-nav" id="demoTabs" role="tablist">
+                <li class="nav-item flex-fill" role="presentation">
+                    <button class="nav-link active w-100" id="tab-kyc" data-bs-toggle="tab" data-bs-target="#content-kyc" type="button" role="tab">
+                        <i class="fas fa-id-card"></i> 1. KYC Hub (NIB/NPWP)
+                    </button>
+                </li>
+                <li class="nav-item flex-fill" role="presentation">
+                    <button class="nav-link w-100" id="tab-doc" data-bs-toggle="tab" data-bs-target="#content-doc" type="button" role="tab">
+                        <i class="fas fa-file-contract"></i> 2. Studio RFQ & Kontrak Ekspor
+                    </button>
+                </li>
+                <li class="nav-item flex-fill" role="presentation">
+                    <button class="nav-link w-100" id="tab-escrow" data-bs-toggle="tab" data-bs-target="#content-escrow" type="button" role="tab">
+                        <i class="fas fa-shield-alt"></i> 3. Simulasi Escrow Security
+                    </button>
+                </li>
+                <li class="nav-item flex-fill" role="presentation">
+                    <button class="nav-link w-100" id="tab-logistics" data-bs-toggle="tab" data-bs-target="#content-logistics" type="button" role="tab">
+                        <i class="fas fa-shipping-fast"></i> 4. Tracking B/L & PEB Pabean
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Demo Tabs Content Panes -->
+            <div class="tab-content" id="demoTabsContent">
+
+                <!-- DEMO 1: KYC HUB -->
+                <div class="tab-pane fade show active" id="content-kyc" role="tabpanel">
+                    <div class="bento-card">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-5">
+                                <h4 class="fw-bold mb-2 text-dark">Verifikasi Legalitas Entitas UMKM</h4>
+                                <p class="text-secondary small mb-3">
+                                    Masukkan Nomor Induk Berusaha (NIB OSS 13 digit) dan Nomor Pokok Wajib Pajak (NPWP) untuk audit instan kesiapan ekspor.
+                                </p>
+
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold text-muted">Coba Sampel UMKM Terdaftar:</label>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <button type="button" id="btnSampleUmkm1" class="btn btn-sm btn-outline-secondary rounded-pill">
+                                            <i class="fas fa-magic me-1"></i>Sampel: PT Nusa Java Cocoa Butter
+                                        </button>
+                                        <button type="button" id="btnSampleUmkm2" class="btn btn-sm btn-outline-secondary rounded-pill">
+                                            <i class="fas fa-magic me-1"></i>Sampel: CV Bali Spice Organics
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="inputNib" class="form-label small fw-bold text-dark">Nomor Induk Berusaha (NIB 13 Digit)</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light"><i class="fas fa-building text-primary"></i></span>
+                                        <input type="text" class="form-control" id="inputNib" placeholder="Contoh: 0220108740123" value="0220108740123">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="inputNpwp" class="form-label small fw-bold text-dark">Nomor Pokok Wajib Pajak (NPWP)</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light"><i class="fas fa-receipt text-warning"></i></span>
+                                        <input type="text" class="form-control" id="inputNpwp" placeholder="Contoh: 81.423.518.2-429.000" value="81.423.518.2-429.000">
+                                    </div>
+                                </div>
+
+                                <button type="button" id="btnVerifyKyc" class="btn btn-primary w-100 rounded-pill py-2 fw-bold shadow-sm">
+                                    <i class="fas fa-check-double me-2"></i>Verifikasi Legalitas Sekarang
+                                </button>
+                            </div>
+
+                            <div class="col-lg-7">
+                                <div id="kycResultPlaceholder" class="p-5 text-center border rounded-4 bg-light" style="display: none;">
+                                    <i class="fas fa-id-card text-muted display-4 mb-3"></i>
+                                    <h6 class="text-secondary fw-semibold">Silakan klik tombol "Verifikasi Legalitas Sekarang"</h6>
+                                    <p class="small text-muted mb-0">Sistem akan melakukan pemeriksaan silang ke database OSS & Ditjen Pajak.</p>
+                                </div>
+
+                                <div id="kycLoading" class="text-center py-5" style="display: none;">
+                                    <div class="spinner-border text-primary mb-3" role="status"></div>
+                                    <h6 class="fw-bold text-dark">Menghubungkan ke API OSS Kemeninvest & Ditjen Pajak...</h6>
+                                    <p class="small text-muted">Memeriksa sertifikasi BPOM, Halal, dan status kepabeanan...</p>
+                                </div>
+
+                                <div id="kycResultBox" class="p-4 rounded-4 border bg-success-subtle bg-opacity-25 border-success">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <div>
+                                            <span class="badge bg-success px-3 py-2 rounded-pill fw-bold">
+                                                <i class="fas fa-check-circle me-1"></i> TERVERIFIKASI RESMI
+                                            </span>
+                                            <h5 id="resCompanyName" class="fw-bold text-dark mt-2 mb-0">PT Nusa Java Organik (Artisan Cocoa & Shea Butter)</h5>
+                                            <small id="resAddress" class="text-muted">Bandung, Jawa Barat • Indonesia</small>
+                                        </div>
+                                        <span class="badge bg-success px-3 py-2 rounded-pill fw-bold">Grade AAA Ekspor</span>
+                                    </div>
+
+                                    <div class="row g-2 mb-3 small">
+                                        <div class="col-sm-6">
+                                            <div class="p-2 bg-white rounded border">
+                                                <span class="text-muted d-block">Nomor NIB:</span>
+                                                <strong id="resNib" class="text-dark">0220108740123</strong>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="p-2 bg-white rounded border">
+                                                <span class="text-muted d-block">NPWP Badan:</span>
+                                                <strong id="resNpwp" class="text-dark">81.423.518.2-429.000</strong>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="p-2 bg-white rounded border">
+                                                <span class="text-muted d-block">Klasifikasi KBLI Utama:</span>
+                                                <strong id="resKbli" class="text-dark">KBLI 10732 (Industri Pengolahan Kakao & Mentega Nabati)</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <span class="small fw-bold text-secondary d-block mb-1">Status Sertifikasi Mutu & Kepatuhan:</span>
+                                        <div class="d-flex flex-wrap gap-2">
+                                            <span class="badge bg-white text-success border border-success"><i class="fas fa-check me-1"></i>HACCP Certified</span>
+                                            <span class="badge bg-white text-success border border-success"><i class="fas fa-check me-1"></i>Sertifikat Halal BPJPH</span>
+                                            <span class="badge bg-white text-success border border-success"><i class="fas fa-check me-1"></i>Izin Edar BPOM MD</span>
+                                            <span class="badge bg-white text-success border border-success"><i class="fas fa-check me-1"></i>Phytosanitary Ready</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="p-3 bg-white rounded-3 border d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-qrcode fs-2 text-dark me-3"></i>
+                                            <div>
+                                                <strong class="d-block small text-dark">NUSABRIDGE Verified Digital Passport</strong>
+                                                <span class="small text-muted">ID: NUSA-EXP-2026-JAVA01</span>
+                                            </div>
+                                        </div>
+                                        <span class="badge bg-success-subtle text-success border border-success px-3 py-1">Valid s/d 2029</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DEMO 2: SMART RFQ STUDIO & INCOTERMS 2020 -->
+                <div class="tab-pane fade" id="content-doc" role="tabpanel">
+                    <div class="bento-card">
+                        <!-- Quick Scenario Selector -->
+                        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 pb-3 border-bottom">
+                            <div>
+                                <span class="badge bg-warning-subtle text-warning border border-warning px-3 py-1 rounded-pill small fw-bold mb-1">
+                                    <i class="fas fa-bolt me-1"></i>PILIH SKENARIO SIMULASI CEPAT:
+                                </span>
+                                <h5 class="fw-bold mb-0 text-dark">Studio Negosiasi RFQ & Kalkulasi Ekspor Incoterms 2020</h5>
+                            </div>
+                            <div class="d-flex flex-wrap gap-2 mt-2 mt-md-0">
+                                <button type="button" class="rfq-scenario-btn active" data-scenario="sc1">
+                                    🍫 Skenario 1: Cocoa Butter ke Jerman (FOB Tanjung Priok)
+                                </button>
+                                <button type="button" class="rfq-scenario-btn" data-scenario="sc2">
+                                    🌿 Skenario 2: Shea & Illipe Butter ke Jepang (CIF Yokohama)
+                                </button>
+                                <button type="button" class="rfq-scenario-btn" data-scenario="sc3">
+                                    ☕ Skenario 3: Vanilla & Rempah ke Belanda (CFR Rotterdam)
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Alert Box for Simulation Feedback -->
+                        <div id="rfqSimulationAlert" class="mb-4"></div>
+
+                        <div class="row g-4">
+                            <!-- Left Column: RFQ Configurator & Cost Breakdown -->
+                            <div class="col-lg-5">
+                                <div class="p-4 bg-light rounded-4 border h-100">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h6 class="fw-bold text-dark mb-0"><i class="fas fa-sliders-h text-primary me-2"></i>Parameter Kontrak & RFQ</h6>
+                                        <span class="badge bg-primary text-white">Live Calculator</span>
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <label class="form-label small fw-bold text-dark">Jenis Dokumen Perdagangan</label>
+                                        <select class="form-select form-select-sm" id="docTypeSelect">
+                                            <option value="Proforma Invoice" selected>Proforma Invoice (PI - Siap Escrow)</option>
+                                            <option value="Request for Quotation (RFQ)">Request for Quotation (RFQ Pembeli)</option>
+                                            <option value="Sales Contract (Incoterms 2020)">Sales Contract (Kontrak Perjanjian ICC)</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="row g-2 mb-2">
+                                        <div class="col-6">
+                                            <label class="form-label small fw-bold text-dark">Eksportir UMKM</label>
+                                            <input type="text" class="form-control form-control-sm" id="docExporterInput" value="PT Nusa Java Organik, Bandung">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label small fw-bold text-dark">Buyer Luar Negeri</label>
+                                            <input type="text" class="form-control form-control-sm" id="docBuyerInput" value="Bavaria Gourmet Import GmbH, Hamburg">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <label class="form-label small fw-bold text-dark">Komoditas Ekspor</label>
+                                        <select class="form-select form-select-sm" id="docCommoditySelect">
+                                            <option value="Artisan Pure Java Cocoa Butter & Shea Butter (200g Glass Jar & Bulk)" selected>Artisan Pure Java Cocoa Butter & Shea Butter</option>
+                                            <option value="Natural Unrefined Shea Butter & Raw Illipe Butter Bulk">Natural Unrefined Shea Butter & Raw Illipe Butter</option>
+                                            <option value="Organic Gourmet Bourbon Vanilla Beans & Clove Spice">Organic Gourmet Bourbon Vanilla Beans & Clove Spice</option>
+                                            <option value="Grade 1 Specialty Arabica Coffee Beans">Grade 1 Specialty Arabica Coffee Beans</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="row g-2 mb-2">
+                                        <div class="col-6">
+                                            <label class="form-label small fw-bold text-dark">Volume (Kuantitas)</label>
+                                            <input type="number" class="form-control form-control-sm" id="docVolumeInput" value="5000">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label small fw-bold text-dark">Harga Penawaran (USD)</label>
+                                            <input type="number" step="0.5" class="form-control form-control-sm" id="docPriceInput" value="12.50">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <label class="form-label small fw-bold text-dark">Aturan Incoterms 2020</label>
+                                        <select class="form-select form-select-sm" id="docIncotermSelect">
+                                            <option value="FOB Tanjung Priok, Jakarta (Incoterms 2020)" selected>FOB - Free on Board (Tanjung Priok, Jakarta)</option>
+                                            <option value="CIF Hamburg Port, Germany (Incoterms 2020)">CIF - Cost, Insurance & Freight (Hamburg, Germany)</option>
+                                            <option value="CFR Rotterdam Port, Netherlands (Incoterms 2020)">CFR - Cost and Freight (Rotterdam, Netherlands)</option>
+                                            <option value="EXW Bandung Facility (Incoterms 2020)">EXW - Ex Works (Fasilitas UMKM Bandung)</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="row g-2 mb-3">
+                                        <div class="col-6">
+                                            <label class="form-label small fw-bold text-dark">Port of Loading (POL)</label>
+                                            <input type="text" class="form-control form-control-sm" id="docPortLoading" value="Port of Tanjung Priok (IDTPP)">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label small fw-bold text-dark">Port of Discharge (POD)</label>
+                                            <input type="text" class="form-control form-control-sm" id="docPortDischarge" value="Port of Hamburg, Germany (DEHAM)">
+                                        </div>
+                                    </div>
+
+                                    <!-- Incoterms 2020 Responsibility Matrix -->
+                                    <div class="p-3 bg-white rounded-3 border mb-3 small">
+                                        <strong class="d-block text-dark mb-2"><i class="fas fa-balance-scale text-warning me-1"></i>Matriks Tanggung Jawab Incoterms:</strong>
+                                        <div class="mb-1"><small class="text-muted">Ongkos Kapal Laut:</small> <span id="incotermFreightDesc" class="fw-semibold">Ditanggung Buyer</span></div>
+                                        <div class="mb-1"><small class="text-muted">Asuransi Maritim:</small> <span id="incotermInsuranceDesc" class="fw-semibold">Ditanggung Buyer</span></div>
+                                        <div><small class="text-muted">Titik Risiko:</small> <span id="incotermRiskDesc" class="fw-semibold">Beralih di atas kapal muat</span></div>
+                                    </div>
+
+                                    <!-- Cost & Profit Breakdown Simulator -->
+                                    <div class="p-3 bg-white rounded-3 border mb-3">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <strong class="small text-dark"><i class="fas fa-calculator text-success me-1"></i>Analisis Biaya & Margin UMKM:</strong>
+                                            <span class="badge bg-success-subtle text-success border border-success">Estimasi Sehat</span>
+                                        </div>
+                                        <div class="cost-breakdown-row">
+                                            <span class="text-muted">Bahan Baku Petani:</span>
+                                            <strong class="text-dark" id="costRawMaterial">$36,250</strong>
+                                        </div>
+                                        <div class="cost-breakdown-row">
+                                            <span class="text-muted">Packaging Food-Grade Ekspor:</span>
+                                            <strong class="text-dark" id="costPackaging">$7,500</strong>
+                                        </div>
+                                        <div class="cost-breakdown-row">
+                                            <span class="text-muted">Trucking & THC Pelabuhan:</span>
+                                            <strong class="text-dark" id="costLogistics">$5,000</strong>
+                                        </div>
+                                        <div class="cost-breakdown-row">
+                                            <span class="text-muted">PEB & Karantina Pabean:</span>
+                                            <strong class="text-dark" id="costCustoms">$2,500</strong>
+                                        </div>
+                                        <div class="cost-breakdown-row pt-2 border-top border-2">
+                                            <span class="fw-bold text-success">Estimasi Margin Bersih UMKM:</span>
+                                            <strong class="text-success fw-bold" id="costMargin">$11,250 (18% Margin)</strong>
+                                        </div>
+                                    </div>
+
+                                    <button type="button" id="btnSimulateSendQuote" class="btn btn-dribbble-cta w-100 py-2 fw-bold shadow-sm justify-content-center">
+                                        <i class="fas fa-paper-plane me-2"></i>Simulasikan Kirim Quotation ke Buyer
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Right Column: Official ICC Incoterms Trade Document Sheet -->
+                            <div class="col-lg-7">
+                                <div class="official-paper-preview" id="docPreviewArea">
+                                    <div class="d-flex justify-content-between align-items-start pb-3 mb-3 border-bottom border-2 border-success">
+                                        <div class="d-flex align-items-center">
+                                            <div class="doc-watermark-seal me-3">
+                                                <i class="fas fa-stamp fs-5 mb-1"></i>
+                                                <span>ICC PARIS<br>2020</span>
+                                            </div>
+                                            <div>
+                                                <h4 id="docPreviewTitle" class="fw-bold mb-0 text-dark">PROFORMA INVOICE</h4>
+                                                <span class="small text-muted">NUSABRIDGE INTERNATIONAL TRADE SYSTEM • ICC PARIS COMPLIANT</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-end">
+                                            <strong id="docPreviewNumber" class="text-dark d-block fs-6">PI-NB-2026-8841</strong>
+                                            <small id="docPreviewDate" class="text-muted">02 Oct 2026</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="row g-3 mb-3 small">
+                                        <div class="col-6">
+                                            <span class="text-muted d-block fw-bold text-uppercase">SELLER / EXPORTER:</span>
+                                            <strong id="docPreviewExporter" class="text-dark d-block">PT Nusa Java Organik, Bandung</strong>
+                                            <div class="text-muted">NIB: 0220108740123 • NPWP: 81.423.518.2</div>
+                                            <div class="text-success"><i class="fas fa-check-circle me-1"></i>NUSABRIDGE Verified Grade AAA</div>
+                                        </div>
+                                        <div class="col-6">
+                                            <span class="text-muted d-block fw-bold text-uppercase">BUYER / IMPORTER:</span>
+                                            <strong id="docPreviewBuyer" class="text-dark d-block">Bavaria Gourmet Import GmbH, Hamburg</strong>
+                                            <div class="text-muted">VAT ID: DE309812490 • Germany</div>
+                                            <div class="text-primary"><i class="fas fa-vault me-1"></i>Buyer Escrow KYC Cleared</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="p-2 bg-light rounded border mb-3 small d-flex flex-wrap justify-content-between">
+                                        <div><strong>Trade Terms:</strong> <span id="docPreviewIncoterm" class="text-primary fw-bold">FOB Tanjung Priok, Jakarta (Incoterms 2020)</span></div>
+                                        <div><strong>Payment Security:</strong> <span class="badge bg-success">100% NUSABRIDGE Escrow Vault</span></div>
+                                    </div>
+
+                                    <div class="table-responsive mb-3">
+                                        <table class="table table-bordered doc-table mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Deskripsi Spesifikasi Komoditas</th>
+                                                    <th class="text-center">Kuantitas</th>
+                                                    <th class="text-end">Harga Satuan</th>
+                                                    <th class="text-end">Total Amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <strong id="docPreviewCommodity">Artisan Pure Java Cocoa Butter & Shea Butter</strong>
+                                                        <div class="text-muted small" id="docPreviewSpecs">
+                                                            Fat Content 52-54%, FFA &lt; 1.75%, Melting Point 34-36°C, Moisture &lt; 0.2%
+                                                        </div>
+                                                        <div class="small text-secondary mt-1">
+                                                            Kemasan: Glass Jar 200g food-grade, vacuum sealed & export master carton.
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-center align-middle" id="docPreviewQty">5,000 Units</td>
+                                                    <td class="text-end align-middle" id="docPreviewPrice">$12.50 USD</td>
+                                                    <td class="text-end align-middle fw-bold" id="docPreviewTotal">$62,500.00</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <th colspan="3" class="text-end">Total Nilai Kontrak Ekspor:</th>
+                                                    <th class="text-end text-success fs-5 fw-bold" id="docPreviewGrandTotal">$62,500.00 USD</th>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+
+                                    <div class="p-3 bg-light rounded border mb-3 small">
+                                        <div class="mb-1"><strong>Klausul Escrow & Penyelesaian Sengketa:</strong> Seluruh pembayaran wajib disetor ke Rekening Bersama Escrow Custodian Bank sebelum stuffing kontainer dimulai. Pelepasan dana tunduk pada bukti verifikasi surveyor mutu dan penerbitan On-Board Bill of Lading.</div>
+                                        <div><strong>Hukum yang Berlaku:</strong> Uniform Customs and Practice for Documentary Credits (UCP 600) & ICC Incoterms 2020 Rules. Arbitrase diselesaikan melalui SIAC / BANI.</div>
+                                    </div>
+
+                                    <div class="row align-items-center pt-2 border-top small">
+                                        <div class="col-sm-7 text-muted">
+                                            <div><i class="fas fa-map-marker-alt text-primary me-1"></i><strong>POL:</strong> <span id="docPreviewPOL">Port of Tanjung Priok (IDTPP)</span></div>
+                                            <div><i class="fas fa-anchor text-info me-1"></i><strong>POD:</strong> <span id="docPreviewPOD">Port of Hamburg, Germany (DEHAM)</span></div>
+                                        </div>
+                                        <div class="col-sm-5 text-end">
+                                            <button type="button" id="btnPrintDoc" class="btn btn-sm btn-dark rounded-pill fw-bold shadow-sm">
+                                                <i class="fas fa-print me-1"></i>Cetak / Unduh PDF Resmi
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DEMO 3: ESCROW PAYMENT SECURITY -->
+                <div class="tab-pane fade" id="content-escrow" role="tabpanel">
+                    <div class="bento-card">
+                        <div class="row g-4">
+                            <div class="col-lg-5">
+                                <h4 class="fw-bold mb-2 text-dark">Simulasi Arsitektur Escrow Vault</h4>
+                                <p class="text-secondary small mb-3">
+                                    Simulasikan bagaimana dana pembeli diamankan 100% dalam rekening bersama devisa resmi dan hanya dicairkan jika tiap pemicu dokumen terpenuhi.
+                                </p>
+
+                                <div class="p-3 bg-light rounded-4 border mb-3" style="border-left: 4px solid #10B981 !important;">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <span class="badge bg-success-subtle text-success p-1 rounded"><i class="fas fa-shield-alt"></i></span>
+                                        <h6 class="fw-bold text-dark mb-0">Proteksi Finansial Bagi UMKM</h6>
+                                    </div>
+                                    <div class="small text-secondary">
+                                        <div class="mb-1"><i class="fas fa-check text-success me-1"></i><strong>Modal Terjamin:</strong> Dana buyer terkunci 100% sebelum produksi dimulai.</div>
+                                        <div class="mb-1"><i class="fas fa-check text-success me-1"></i><strong>Anti-Pembatalan:</strong> Pembeli tidak dapat membatalkan pesanan sepihak.</div>
+                                        <div><i class="fas fa-check text-success me-1"></i><strong>Cash Flow Sehat:</strong> DP 30% cair di muka untuk bahan baku & operasional.</div>
+                                    </div>
+                                </div>
+
+                                <div class="p-3 bg-light rounded-4 border" style="border-left: 4px solid #0F766E !important;">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <span class="badge bg-primary-subtle text-primary p-1 rounded"><i class="fas fa-user-shield"></i></span>
+                                        <h6 class="fw-bold text-dark mb-0">Proteksi Bagi Buyer Internasional</h6>
+                                    </div>
+                                    <div class="small text-secondary">
+                                        <div class="mb-1"><i class="fas fa-check text-primary me-1"></i><strong>Uang Aman di Kustodian:</strong> Dana aman di bank sampai sertifikat mutu lolos.</div>
+                                        <div class="mb-1"><i class="fas fa-check text-primary me-1"></i><strong>Pelunasan Berbasis B/L:</strong> Sisa 20% cair saat On-Board B/L asli terverifikasi.</div>
+                                        <div><i class="fas fa-check text-primary me-1"></i><strong>Arbitrase Sah:</strong> Penyelesaian sengketa ICC Paris via SIAC / BANI.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-7">
+                                <h5 class="fw-bold text-dark mb-3">Alur 4 Pemicu Pencairan Escrow (Conditional Milestone)</h5>
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <div class="escrow-flow-step active">
+                                            <div class="escrow-step-num">1</div>
+                                            <h6 class="fw-bold text-dark mb-1">Tahap 1: Deposit Buyer</h6>
+                                            <p class="small text-muted mb-2">Buyer menyetor 100% ke Escrow Vault. <strong>30% dicairkan</strong> ke UMKM sebagai modal kerja produksi.</p>
+                                            <span class="badge bg-success-subtle text-success border border-success">Pemicu: Sales Contract Ttd</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="escrow-flow-step active">
+                                            <div class="escrow-step-num">2</div>
+                                            <h6 class="fw-bold text-dark mb-1">Tahap 2: QC Lolos Uji</h6>
+                                            <p class="small text-muted mb-2">Surveyor merilis sertifikat analisis (COA). <strong>30% dicairkan</strong> ke rekening eksportir.</p>
+                                            <span class="badge bg-primary-subtle text-primary border border-primary">Pemicu: Certificate of Analysis</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="escrow-flow-step active">
+                                            <div class="escrow-step-num">3</div>
+                                            <h6 class="fw-bold text-dark mb-1">Tahap 3: Bea Cukai SPE</h6>
+                                            <p class="small text-muted mb-2">Barang gate-in di pelabuhan & PEB jalur hijau disetujui. <strong>20% dicairkan</strong>.</p>
+                                            <span class="badge bg-warning-subtle text-warning border border-warning">Pemicu: SPE CEISA Bea Cukai</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="escrow-flow-step active">
+                                            <div class="escrow-step-num">4</div>
+                                            <h6 class="fw-bold text-dark mb-1">Tahap 4: Pelunasan B/L</h6>
+                                            <p class="small text-muted mb-2">Kontainer naik ke kapal & terbit On-Board Bill of Lading asli. <strong>Sisa 20% lunas</strong>.</p>
+                                            <span class="badge bg-info-subtle text-info border border-info">Pemicu: Original On-Board B/L</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DEMO 4: TRACKING LOGISTIK & KEPABEANAN -->
+                <div class="tab-pane fade" id="content-logistics" role="tabpanel">
+                    <div class="bento-card">
+                        <div class="row g-4">
+                            <div class="col-lg-5">
+                                <h4 class="fw-bold mb-2 text-dark">Pelacakan Kontainer & Status Pabean</h4>
+                                <p class="text-secondary small mb-3">
+                                    Lacak status pengapalan internasional secara transparan menggunakan nomor Bill of Lading (B/L) atau Nomor Pendaftaran Ekspor (PEB).
+                                </p>
+
+                                <div class="mb-3">
+                                    <label class="form-label small fw-bold text-muted">Coba Sampel Nomor Registrasi:</label>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <button type="button" id="btnSampleBL" class="btn btn-sm btn-outline-primary rounded-pill">
+                                            <i class="fas fa-ship me-1"></i>B/L: BL-IDN-2026-8890
+                                        </button>
+                                        <button type="button" id="btnSamplePEB" class="btn btn-sm btn-outline-warning text-dark rounded-pill">
+                                            <i class="fas fa-file-alt me-1"></i>PEB: PEB-040300-2026-004123
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="inputTrackingNumber" class="form-label small fw-bold text-dark">Nomor B/L atau Nomor Pengajuan PEB</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light"><i class="fas fa-search text-primary"></i></span>
+                                        <input type="text" class="form-control" id="inputTrackingNumber" placeholder="Contoh: BL-IDN-2026-8890" value="BL-IDN-2026-8890">
+                                    </div>
+                                </div>
+
+                                <button type="button" id="btnTrackShipment" class="btn btn-primary w-100 rounded-pill py-2 fw-bold shadow-sm">
+                                    <i class="fas fa-compass me-2"></i>Lacak Status Logistik & Pabean
+                                </button>
+                            </div>
+
+                            <div class="col-lg-7">
+                                <div id="trackingResultBox" class="p-4 bg-light rounded-4 border">
+                                    <div class="d-flex justify-content-between align-items-start mb-3 pb-2 border-bottom">
+                                        <div>
+                                            <span class="badge bg-primary text-white" id="trackDisplayType">Bill of Lading (B/L)</span>
+                                            <h5 class="fw-bold text-dark mt-1 mb-0" id="trackDisplayNumber">BL-IDN-2026-8890</h5>
+                                            <small class="text-muted" id="trackDisplayExporter">PT Nusa Java Cocoa Butter</small>
+                                        </div>
+                                        <span class="badge bg-success-subtle text-success border border-success px-3 py-2 rounded-pill fw-bold" id="trackDisplayStatus">
+                                            Dalam Pelayaran Samudera (In-Transit)
+                                        </span>
+                                    </div>
+
+                                    <div class="row g-2 mb-3 small">
+                                        <div class="col-sm-6">
+                                            <span class="text-muted d-block">Kapal Pengangkut:</span>
+                                            <strong class="text-dark" id="trackDisplayCarrier">MV Nusantara Pride Voy 104N</strong>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <span class="text-muted d-block">Rute Pelayaran:</span>
+                                            <strong class="text-dark" id="trackDisplayRoute">Tanjung Priok -> Port of Hamburg</strong>
+                                        </div>
+                                    </div>
+
+                                    <div class="logistics-timeline mt-4">
+                                        <div class="timeline-milestone done">
+                                            <div class="timeline-dot"><i class="fas fa-check"></i></div>
+                                            <h6 class="fw-bold text-dark mb-0">Pendaftaran Dokumen PEB (CEISA Bea Cukai)</h6>
+                                            <small class="text-muted">Pemberitahuan Ekspor Barang diterima & terverifikasi sistem pabean.</small>
+                                        </div>
+                                        <div class="timeline-milestone done">
+                                            <div class="timeline-dot"><i class="fas fa-check"></i></div>
+                                            <h6 class="fw-bold text-dark mb-0">Surat Persetujuan Ekspor (SPE) Terbit - Jalur Hijau</h6>
+                                            <small class="text-muted">Tidak memerlukan pemeriksaan fisik kontainer pabean.</small>
+                                        </div>
+                                        <div class="timeline-milestone done">
+                                            <div class="timeline-dot"><i class="fas fa-check"></i></div>
+                                            <h6 class="fw-bold text-dark mb-0">Stuffing & Gate-In Pelabuhan Tanjung Priok</h6>
+                                            <small class="text-muted">Kontainer 1x20' FCL telah masuk ke Terminal Peti Kemas (JICT).</small>
+                                        </div>
+                                        <div class="timeline-milestone done">
+                                            <div class="timeline-dot"><i class="fas fa-check"></i></div>
+                                            <h6 class="fw-bold text-dark mb-0">Pemuatan Kapal & Terbit On-Board B/L</h6>
+                                            <small class="text-muted">Bill of Lading asli diverifikasi pihak pelayaran & bank escrow.</small>
+                                        </div>
+                                        <div class="timeline-milestone current">
+                                            <div class="timeline-dot"><i class="fas fa-ship"></i></div>
+                                            <h6 class="fw-bold text-primary mb-0">Dalam Pelayaran Samudera (In-Transit)</h6>
+                                            <small class="text-muted">Posisi Terkini: Selat Malaka Menuju Terusan Suez • Estimasi Tiba (ETA): 12 Hari</small>
+                                        </div>
+                                        <div class="timeline-milestone">
+                                            <div class="timeline-dot"><i class="fas fa-map-pin"></i></div>
+                                            <h6 class="fw-bold text-secondary mb-0">Tiba di Port of Discharge & Delivery ke Buyer</h6>
+                                            <small class="text-muted">Port of Hamburg, Germany (Akan Datang)</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Demo End -->
+
+    <!-- ======================================================================
+         8. CALL TO ACTION & FOOTER
+         ====================================================================== -->
+    <div class="container-fluid bg-dark text-white py-5 px-lg-5">
+        <div class="container py-4">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7">
+                    <h2 class="display-6 fw-bold text-white mb-3">Siap Membawa Komoditas UMKM Anda ke Pasar Ekspor Global?</h2>
+                    <p class="text-white-50 mb-4">
+                        Bergabunglah dengan ribuan UMKM Indonesia yang telah menikmati kepastian transaksi internasional dengan jaminan Escrow dan otomasi kepabeanan di platform NUSABRIDGE.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#demo" class="btn btn-dribbble-cta px-4 py-3 fw-bold">
+                            <i class="fas fa-user-plus me-1"></i>Daftarkan UMKM Anda Sekarang
+                        </a>
+                        <a href="#fitur" class="btn btn-outline-light rounded-pill px-4 py-3 fw-bold">
+                            <i class="fas fa-question-circle me-1"></i>Pelajari Panduan Lengkap
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-lg-end">
+                    <div class="p-4 rounded-4 bg-secondary bg-opacity-25 border border-secondary text-start d-inline-block">
+                        <h6 class="fw-bold text-white mb-2"><i class="fas fa-headset text-warning me-2"></i>Pusat Bantuan Ekspor NUSABRIDGE</h6>
+                        <p class="text-white-50 small mb-2">Konsultasi regulasi Incoterms 2020 & verifikasi NIB/NPWP gratis untuk UMKM binaan.</p>
+                        <strong class="text-white d-block mb-1"><i class="fas fa-envelope text-info me-2"></i>ekspor@nusabridge.id</strong>
+                        <strong class="text-white d-block"><i class="fab fa-whatsapp text-success me-2"></i>+62 812-3456-7890</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-5 mt-5 border-top border-secondary align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white-50 small">
+                        &copy; 2026 <strong>NUSABRIDGE</strong>. Seluruh Hak Cipta Dilindungi Undang-Undang. Sesuai Standar ICC Paris Incoterms 2020 & Peraturan Ekspor Indonesia.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="d-inline-flex gap-3 text-white-50 small">
+                        <a href="#home" class="text-white-50 text-decoration-none">Home</a>
+                        <a href="#fitur" class="text-white-50 text-decoration-none">Fitur</a>
+                        <a href="#alur" class="text-white-50 text-decoration-none">Alur</a>
+                        <a href="#role" class="text-white-50 text-decoration-none">Role</a>
+                        <a href="#statistik" class="text-white-50 text-decoration-none">Statistik</a>
+                        <a href="#demo" class="text-white-50 text-decoration-none">Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="btn btn-lg btn-success btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template & Custom Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/nusa.js"></script>
+</body>
+
+</html>

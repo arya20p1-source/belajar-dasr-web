@@ -1,0 +1,689 @@
+/* ==========================================================================
+   NUSA (NusaBridge) - Platform Ekosistem Ekspor UMKM Indonesia
+   Custom Stylesheet for Sticky Navbar, Clean Circle Hero, Charts & Features
+   ========================================================================== */
+
+:root {
+    --nusa-primary: #0F766E;
+    --nusa-primary-hover: #0d655e;
+    --nusa-primary-dark: #115E59;
+    --nusa-primary-light: #F0FDFA;
+    --nusa-primary-border: #99F6E4;
+    --nusa-secondary: #0F172A;
+    --nusa-secondary-light: #334155;
+    --nusa-accent: #D97706;
+    --nusa-accent-light: #FEF3C7;
+    --nusa-success: #16A34A;
+    --nusa-bg-light: #F8FAFC;
+    --nusa-card-bg: #FFFFFF;
+    --nusa-border: #E2E8F0;
+    --nusa-shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.05);
+    --nusa-shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+    --nusa-shadow-lg: 0 20px 35px -5px rgba(15, 118, 110, 0.12), 0 10px 10px -5px rgba(15, 23, 42, 0.04);
+}
+
+/* ==========================================================================
+   1. FIXED & STICKY NAVBAR - Menghilangkan bug tenggelam/hilang saat scroll
+   ========================================================================== */
+.nusa-navbar.sticky-top,
+.navbar-light.sticky-top {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1050 !important;
+    background-color: #ffffff !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border-bottom: 1px solid var(--nusa-border) !important;
+}
+
+.nusa-navbar.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.96) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08) !important;
+    border-bottom-color: rgba(15, 118, 110, 0.15) !important;
+}
+
+.nusa-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 12px 24px;
+}
+
+.nusa-brand-icon {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--nusa-primary), #0D9488);
+    color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 6px 16px rgba(15, 118, 110, 0.3);
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.nusa-brand-title {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--nusa-secondary);
+    line-height: 1;
+    margin: 0;
+}
+
+.nusa-brand-title span {
+    color: var(--nusa-primary);
+}
+
+.nusa-brand-subtitle {
+    font-size: 11px;
+    font-weight: 600;
+    color: #64748B;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    display: block;
+    margin-top: 3px;
+}
+
+.nusa-navbar .nav-link {
+    color: #334155 !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    padding: 24px 16px !important;
+    position: relative;
+    transition: color 0.25s ease !important;
+}
+
+.nusa-navbar .nav-link:hover,
+.nusa-navbar .nav-link.active {
+    color: var(--nusa-primary) !important;
+}
+
+.nusa-navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 16px;
+    right: 16px;
+    height: 3px;
+    background: var(--nusa-primary);
+    border-radius: 2px;
+    transform: scaleX(0);
+    transition: transform 0.25s ease;
+}
+
+.nusa-navbar .nav-link:hover::after,
+.nusa-navbar .nav-link.active::after {
+    transform: scaleX(1);
+}
+
+.nusa-navbar .btn-nav-cta {
+    background: linear-gradient(135deg, var(--nusa-primary), #0D9488);
+    color: #ffffff !important;
+    border: none;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    box-shadow: 0 4px 14px rgba(15, 118, 110, 0.25);
+    transition: all 0.25s ease;
+}
+
+.nusa-navbar .btn-nav-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(15, 118, 110, 0.35);
+    color: #ffffff !important;
+}
+
+/* ==========================================================================
+   2. HERO SECTION - Clean Circle Layout & Elegant Accent
+   ========================================================================== */
+.nusa-hero {
+    position: relative;
+    background: radial-gradient(circle at 85% 30%, rgba(204, 251, 241, 0.5) 0%, rgba(254, 243, 199, 0.35) 40%, rgba(248, 250, 252, 1) 85%);
+    overflow: hidden;
+    padding: 70px 0 90px;
+}
+
+.nusa-hero::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    right: -100px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(15, 118, 110, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.nusa-badge-pill {
+    display: inline-flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1px solid var(--nusa-primary-border);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--nusa-primary);
+    box-shadow: var(--nusa-shadow-sm);
+    margin-bottom: 20px;
+}
+
+.nusa-badge-pill .pulse-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--nusa-success);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.7);
+    animation: nusaPulse 2s infinite;
+}
+
+@keyframes nusaPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(22, 163, 74, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(22, 163, 74, 0);
+    }
+}
+
+.nusa-hero-title {
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--nusa-secondary);
+    letter-spacing: -0.5px;
+    margin-bottom: 22px;
+}
+
+.nusa-hero-title .highlight-text {
+    background: linear-gradient(135deg, var(--nusa-primary), #0D9488);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nusa-hero-desc {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 30px;
+}
+
+/* Clean Circle Visual Container */
+.hero-circle-container {
+    position: relative;
+    width: 480px;
+    height: 480px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-outer-ring {
+    position: absolute;
+    width: 470px;
+    height: 470px;
+    border-radius: 50%;
+    border: 2px dashed rgba(15, 118, 110, 0.3);
+    animation: rotateRing 30s linear infinite;
+}
+
+@keyframes rotateRing {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.hero-circle-glow {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(217, 119, 6, 0.25) 0%, rgba(15, 118, 110, 0.2) 60%, transparent 80%);
+    filter: blur(20px);
+}
+
+.hero-clean-circle-image {
+    position: relative;
+    width: 390px;
+    height: 390px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #FFFFFF;
+    box-shadow: 0 25px 60px -15px rgba(15, 23, 42, 0.25);
+    background: #FFFFFF;
+    z-index: 2;
+    transition: transform 0.4s ease;
+}
+
+.hero-clean-circle-image:hover {
+    transform: scale(1.02);
+}
+
+.hero-clean-circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Floating Badges Around Circle */
+.hero-floating-badge {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: 16px;
+    padding: 12px 18px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 5;
+    animation: floatAnim 4s ease-in-out infinite alternate;
+}
+
+@keyframes floatAnim {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(-8px); }
+}
+
+.badge-pos-1 {
+    top: 15px;
+    right: -25px;
+    animation-delay: 0s;
+}
+
+.badge-pos-2 {
+    bottom: 25px;
+    left: -35px;
+    animation-delay: 1.5s;
+}
+
+.badge-pos-3 {
+    bottom: -15px;
+    right: 20px;
+    animation-delay: 2.5s;
+}
+
+.floating-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.floating-icon.gold {
+    background: #FEF3C7;
+    color: #B45309;
+}
+
+.floating-icon.emerald {
+    background: #D1FAE5;
+    color: #065F46;
+}
+
+.floating-icon.blue {
+    background: #DBEAFE;
+    color: #1E40AF;
+}
+
+.floating-text strong {
+    display: block;
+    font-size: 13px;
+    color: var(--nusa-secondary);
+    line-height: 1.2;
+}
+
+.floating-text span {
+    font-size: 11px;
+    color: #64748B;
+}
+
+/* ==========================================================================
+   3. STATISTIK & DATA VISUALIZATION SECTION
+   ========================================================================== */
+.nusa-stats-section {
+    background-color: #FFFFFF;
+    padding: 90px 0;
+    position: relative;
+}
+
+.chart-card {
+    background: #FFFFFF;
+    border: 1px solid var(--nusa-border);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: var(--nusa-shadow-md);
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.chart-card:hover {
+    box-shadow: var(--nusa-shadow-lg);
+    border-color: var(--nusa-primary-border);
+}
+
+.chart-filter-btn {
+    border: 1px solid #E2E8F0;
+    background: #F8FAFC;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+}
+
+.chart-filter-btn:hover,
+.chart-filter-btn.active {
+    background: var(--nusa-primary);
+    color: #FFFFFF;
+    border-color: var(--nusa-primary);
+}
+
+.escrow-slider-card {
+    background: linear-gradient(145deg, #F8FAFC, #F1F5F9);
+    border-radius: 16px;
+    padding: 24px;
+    border: 1px solid var(--nusa-border);
+}
+
+.custom-range-slider {
+    accent-color: var(--nusa-primary);
+    height: 8px;
+    width: 100%;
+}
+
+.escrow-pill-stat {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 12px 16px;
+    text-align: center;
+}
+
+/* ==========================================================================
+   4. FITUR PROPOSAL INTERAKTIF TABS & DEMO
+   ========================================================================== */
+.nusa-demo-section {
+    background: #F8FAFC;
+    padding: 90px 0;
+}
+
+.demo-tabs-nav {
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid var(--nusa-border);
+    padding: 8px;
+    border-radius: 16px;
+    box-shadow: var(--nusa-shadow-sm);
+    gap: 8px;
+    margin-bottom: 35px;
+    overflow-x: auto;
+}
+
+.demo-tabs-nav .nav-link {
+    flex: 1;
+    text-align: center;
+    padding: 14px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #475569;
+    border-radius: 12px;
+    border: none;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.demo-tabs-nav .nav-link.active {
+    background: linear-gradient(135deg, var(--nusa-primary), #0D9488);
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 15px rgba(15, 118, 110, 0.25);
+}
+
+.demo-box-card {
+    background: #FFFFFF;
+    border: 1px solid var(--nusa-border);
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: var(--nusa-shadow-md);
+}
+
+/* KYC Hub Result Box */
+.kyc-result-card {
+    border: 2px dashed #CBD5E1;
+    border-radius: 16px;
+    padding: 24px;
+    background: #FAFAFA;
+    transition: all 0.3s ease;
+}
+
+.kyc-result-card.verified {
+    border-color: var(--nusa-success);
+    background: #F0FDF4;
+}
+
+.verified-stamp {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: #DCFCE7;
+    color: #15803D;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 8px;
+    border: 1px solid #BBF7D0;
+}
+
+/* Document Generator Preview */
+.doc-preview-sheet {
+    background: #FFFFFF;
+    border: 1px solid #CBD5E1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    padding: 35px;
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #1E293B;
+}
+
+.doc-header-border {
+    border-bottom: 2px solid #0F766E;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.doc-table th {
+    background: #F1F5F9;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.doc-table td {
+    font-size: 13px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+/* Escrow Security Flow */
+.escrow-flow-step {
+    position: relative;
+    padding: 20px;
+    border-radius: 16px;
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    transition: all 0.25s ease;
+}
+
+.escrow-flow-step.active {
+    background: #F0FDFA;
+    border-color: var(--nusa-primary);
+    box-shadow: 0 4px 15px rgba(15, 118, 110, 0.1);
+}
+
+.escrow-step-num {
+    width: 36px;
+    height: 36px;
+    background: var(--nusa-primary);
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+/* Logistics Timeline Tracker */
+.logistics-timeline {
+    position: relative;
+    padding-left: 35px;
+}
+
+.logistics-timeline::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    bottom: 10px;
+    width: 3px;
+    background: #E2E8F0;
+}
+
+.timeline-milestone {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -35px;
+    top: 2px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 3px solid #94A3B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    z-index: 2;
+}
+
+.timeline-milestone.done .timeline-dot {
+    background: var(--nusa-success);
+    border-color: #DCFCE7;
+    color: #FFFFFF;
+}
+
+.timeline-milestone.current .timeline-dot {
+    background: var(--nusa-primary);
+    border-color: #CCFBF1;
+    color: #FFFFFF;
+    animation: nusaPulse 1.8s infinite;
+}
+
+/* ==========================================================================
+   5. ALUR & ROLE SECTIONS
+   ========================================================================== */
+.nusa-workflow-card {
+    background: #FFFFFF;
+    border: 1px solid var(--nusa-border);
+    border-radius: 18px;
+    padding: 30px;
+    position: relative;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.nusa-workflow-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--nusa-shadow-lg);
+    border-color: var(--nusa-primary-border);
+}
+
+.workflow-step-badge {
+    display: inline-block;
+    background: var(--nusa-primary-light);
+    color: var(--nusa-primary);
+    font-weight: 800;
+    font-size: 14px;
+    padding: 4px 12px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 1px solid var(--nusa-primary-border);
+}
+
+.role-pill-btn {
+    padding: 14px 24px;
+    font-weight: 600;
+    border-radius: 14px;
+    border: 1px solid #E2E8F0;
+    background: #FFFFFF;
+    color: #475569;
+    transition: all 0.25s ease;
+}
+
+.role-pill-btn.active {
+    background: var(--nusa-secondary);
+    color: #FFFFFF;
+    border-color: var(--nusa-secondary);
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .hero-circle-container {
+        width: 340px;
+        height: 340px;
+        margin-top: 40px;
+    }
+    .hero-outer-ring {
+        width: 330px;
+        height: 330px;
+    }
+    .hero-clean-circle-image {
+        width: 280px;
+        height: 280px;
+    }
+    .hero-circle-glow {
+        width: 290px;
+        height: 290px;
+    }
+    .badge-pos-1 {
+        right: -10px;
+        top: -10px;
+    }
+    .badge-pos-2 {
+        left: -10px;
+        bottom: 10px;
+    }
+    .badge-pos-3 {
+        display: none;
+    }
+    .nusa-hero-title {
+        font-size: 32px;
+    }
+}
