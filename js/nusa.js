@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const navbarIsland = document.getElementById('nusaNavbarIsland') || document.querySelector('.nusa-navbar-island') || document.querySelector('.navbar');
     const navCollapse = document.getElementById('navbarCollapse');
     const navToggler = document.querySelector('.navbar-toggler-custom');
-    
+
     function handleNavbarScroll() {
         if (!navbarIsland) return;
         if (window.scrollY > 20) {
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Close mobile menu when clicking outside
-    document.addEventListener('click', function(e) {
+    document.addEventListener('click', function (e) {
         if (window.innerWidth < 992 && navCollapse && navCollapse.classList.contains('show')) {
             if (navbarIsland && !navbarIsland.contains(e.target)) {
                 closeMobileMenu();
@@ -316,7 +316,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateEscrowCalculations(val) {
         const amount = parseInt(val, 10);
         if (displayAmount) displayAmount.textContent = '$' + amount.toLocaleString() + ' USD';
-        
+
         const dp = amount * 0.30;
         const qc = amount * 0.30;
         const customs = amount * 0.20;
@@ -591,7 +591,7 @@ document.addEventListener('DOMContentLoaded', function () {
         btnSimulateSendQuote.addEventListener('click', function () {
             const buyer = docBuyerInput ? docBuyerInput.value : 'Buyer Luar Negeri';
             const total = document.getElementById('docPreviewGrandTotal') ? document.getElementById('docPreviewGrandTotal').textContent : '$62,500.00 USD';
-            
+
             // Show interactive simulation success toast
             const alertBox = document.getElementById('rfqSimulationAlert');
             if (alertBox) {
