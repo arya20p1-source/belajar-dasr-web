@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', function(e) {
-        if (window.innerWidth < 992 && navCollapse && navCollapse.classList.contains('show')) {
+        if (window.innerWidth < 1200 && navCollapse && navCollapse.classList.contains('show')) {
             if (navbarIsland && !navbarIsland.contains(e.target)) {
                 closeMobileMenu();
             }
@@ -302,6 +302,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const statCustoms = document.getElementById('escrowStatCustoms');
     const statBL = document.getElementById('escrowStatBL');
     const statFee = document.getElementById('escrowStatFee');
+    const statRemaining = document.getElementById('escrowStatRemaining');
 
     function updateEscrowCalculations(val) {
         const amount = parseInt(val, 10);
@@ -318,6 +319,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (statCustoms) statCustoms.textContent = '$' + customs.toLocaleString();
         if (statBL) statBL.textContent = '$' + bl.toLocaleString();
         if (statFee) statFee.textContent = '$' + fee.toLocaleString() + ' (0.5%)';
+        if (statRemaining) statRemaining.textContent = 'Sisa Saldo: 0% (Telah Lunas 100%)';
     }
 
     if (escrowSlider) {
@@ -580,8 +582,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     <div class="alert alert-success border-success shadow-sm rounded-4 p-3 d-flex align-items-center mb-0 animate__animated animate__fadeIn">
                         <i class="fas fa-check-circle fs-3 text-success me-3"></i>
                         <div>
-                            <strong class="d-block text-dark">Simulasi Berhasil! Penawaran Resmi Telah Dikirim ke ${buyer}</strong>
-                            <span class="small text-secondary">Nilai Kontrak: <strong>${total}</strong> • Buyer merespons positif: <em>"Penawaran disetujui. Siap menyetor 100% dana ke NusaBridge Escrow Vault."</em></span>
+                            <strong class="d-block text-dark">Simulasi Berhasil! Penawaran & Analisis Klausul Incoterms 2020 oleh Gemini AI Agent Siap untuk ${buyer}</strong>
+                            <span class="small text-secondary">Nilai Kontrak: <strong>${total}</strong> • Draft Proforma Invoice & Sales Contract telah disusun secara otomatis. Buyer merespons positif: <em>"Penawaran disetujui untuk simulasi escrow sandbox."</em></span>
                         </div>
                     </div>
                 `;
@@ -611,14 +613,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (btnSampleBL) {
         btnSampleBL.addEventListener('click', function () {
             if (inputTrackingNumber) inputTrackingNumber.value = 'BL-IDN-2026-8890';
-            executeTracking('BL-IDN-2026-8890', 'Bill of Lading (B/L)', 'PT Nusa Java Cocoa Butter', 'MV Nusantara Pride Voy 104N', 'Tanjung Priok -> Port of Hamburg', 'Dalam Pelayaran Samudera (In-Transit)');
+            executeTracking('BL-IDN-2026-8890', 'Bill of Lading (B/L)', 'PT Nusa Java Cocoa Butter', 'MV Nusantara Pride Voy 104N', 'Tanjung Priok -> Port of Hamburg', 'Dalam Pelayaran Samudera (In-Transit - Data Demo)');
         });
     }
 
     if (btnSamplePEB) {
         btnSamplePEB.addEventListener('click', function () {
             if (inputTrackingNumber) inputTrackingNumber.value = 'PEB-040300-2026-004123';
-            executeTracking('PEB-040300-2026-004123', 'Pemberitahuan Ekspor Barang (PEB)', 'CV Bali Spice Organics', 'KPU Bea dan Cukai Tanjung Perak', 'Surabaya -> Yokohama Port', 'Jalur Hijau (SPE Diterbitkan)');
+            executeTracking('PEB-040300-2026-004123', 'Pemberitahuan Ekspor Barang (PEB)', 'CV Bali Spice Organics', 'KPU Bea dan Cukai Tanjung Perak', 'Surabaya -> Yokohama Port', 'PEB ke NPE Jalur Hijau (Data Demo)');
         });
     }
 
@@ -629,7 +631,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('Silakan masukkan nomor B/L atau PEB terlebih dahulu.');
                 return;
             }
-            executeTracking(trackVal, trackVal.startsWith('PEB') ? 'Pemberitahuan Ekspor Barang' : 'Bill of Lading (B/L)', 'UMKM Terverifikasi NusaBridge', 'MV Meratus Java V-209', 'Tanjung Priok -> Singapore Transshipment', 'Dalam Proses Logistik Terverifikasi');
+            executeTracking(trackVal, trackVal.startsWith('PEB') ? 'Pemberitahuan Ekspor Barang' : 'Bill of Lading (B/L)', 'UMKM Terverifikasi NusaBridge (Sandbox)', 'MV Meratus Java V-209', 'Tanjung Priok -> Singapore Transshipment', 'PEB ke NPE Jalur Hijau (Data Demo)');
         });
     }
 
